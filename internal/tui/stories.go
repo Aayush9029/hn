@@ -36,6 +36,7 @@ type storiesModel struct {
 	list           list.Model
 	feed           models.FeedType
 	items          []models.Item
+	ready          bool
 	selectedThread int
 	wantRefresh    bool
 }
@@ -59,6 +60,7 @@ func newStoriesModel(feed models.FeedType, items []models.Item) storiesModel {
 		list:  l,
 		feed:  feed,
 		items: items,
+		ready: true,
 	}
 }
 
@@ -92,6 +94,9 @@ func (m storiesModel) view() string {
 }
 
 func (m *storiesModel) setSize(w, h int) {
+	if !m.ready {
+		return
+	}
 	m.list.SetSize(w, h)
 }
 
