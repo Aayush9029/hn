@@ -1,12 +1,10 @@
 # hn
 
 Browse Hacker News from the terminal — CLI + interactive TUI.
-<img width="2102" height="1602" alt="CleanShot 2026-03-04 at 09 51 13@2x" src="https://github.com/user-attachments/assets/0b4ade27-f544-425b-9b11-29a84ed0cafd" />
 
 <img alt="hn preview" src="assets/preview.jpg" />
 
 ## Install
-
 
 ```bash
 brew install aayush9029/tap/hn
