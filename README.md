@@ -51,3 +51,7 @@ hn -i                  # interactive TUI
 ## License
 
 MIT
+
+---
+
+*More CLI tools: [`brew tap aayush9029/tap`](https://github.com/Aayush9029/homebrew-tap)*
